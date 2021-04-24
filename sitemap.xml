@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 	<url>
 		<loc>https://clawfinance.carrd.co</loc>
-		<lastmod>2021-04-22</lastmod>
+		<lastmod>2021-04-24</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 		<image:image>
@@ -12,7 +12,10 @@
 			<image:loc>https://clawfinance.carrd.co/assets/images/image07.png</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://clawfinance.carrd.co/assets/images/image01.png</image:loc>
+			<image:loc>https://clawfinance.carrd.co/assets/images/image01.gif</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://clawfinance.carrd.co/assets/images/image02.png</image:loc>
 		</image:image>
 	</url>
 </urlset>
