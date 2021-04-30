@@ -10,10 +10,27 @@
     </head>
 
     <body>
-
+        <div id="navigation" class="sidenav">
+            <a class="closebtn" onclick="closenav()">&times;</a>
+            <a href="#INTRO">Claw Finance</a>
+            <a href="#GAR">Giveaways and rewards</a>
+            <a href="#APP">Apps</a>
+            <a href="#CT">Claw tokenomics</a>
+            <a href="#RM">Roadmap</a>
+            <a href="#OP">Partnerships</a>
+            <a href="#HTB">How to buy CLAW</a>
+        </div>
+        <span onclick="opennav()" class="openbtn">&#9776;</span>
         <!--Introduction-->
-        <div class="section animated">
+        <div class="section animated" id="INTRO">
             <img alt="Banner" src="./images/banner.png" class="banner"/>
+            <!--Social links-->
+            <div>
+                <a href="https://discord.gg/5CaRFmHPdn"><img alt="Discord" class="socials" src="./images/discord.png"></a>
+                <a href="https://www.reddit.com/r/ClawFinance/"><img alt="Reddit" class="socials" src="./images/reddit.png"></a>
+                <a href="https://t.me/clawfinancetokenbsc"><img alt="Telegram" class="socials" src="./images/telegram.png"></a>
+                <a href="https://twitter.com/claw_finance"><img alt="Twitter" class="socials" src="./images/twitter.png"></a>
+            </div>
 
             <h1>Claw Finance</h1>
             <h3>The blockchain</h3>
@@ -29,25 +46,16 @@
             </p>
 
             <!--Buttons-->
-            <div class="buttons animated">
+            <div class="buttons">
                 <a class="buttonlink" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x18A323B43a06c1319168f522513F318391f8CAc5">Buy on PancakeSwap</a>
                 <a class="buttonlink" href='https://poocoin.app/tokens/0x18a323b43a06c1319168f522513f318391f8cac5'>View chart</button>
                 <a class="buttonlink" href="#HTB">How to buy</a>
                 <a class="buttonlink" href="https://bscscan.com/token/0x18a323b43a06c1319168f522513f318391f8cac5">View in Bscan</a>
             </div>
-            <h2>Our socials!</h2>
-
-            <!--Social links-->
-            <div>
-                <a href="https://discord.gg/5CaRFmHPdn"><img alt="Discord" class="socials" src="./images/discord.png"></a>
-                <a href="https://www.reddit.com/r/ClawFinance/"><img alt="Reddit" class="socials" src="./images/reddit.png"></a>
-                <a href="https://t.me/clawfinancetokenbsc"><img alt="Telegram" class="socials" src="./images/telegram.png"></a>
-                <a href="https://twitter.com/claw_finance"><img alt="Twitter" class="socials" src="./images/twitter.png"></a>
-            </div>
         </div>
 
         <!--Giveaways and rewards-->
-        <div class="section animated">
+        <div class="section animated" id="GAR">
             <h1>Giveaways and rewards</h1>
             <p>
                 Which kind of giveaways will we do and when?</br>
@@ -67,7 +75,7 @@
         </div>
 
         <!--Apps-->
-        <div class="section animated">
+        <div class="section animated" id="APP">
             <h1>Apps</h1>
             <img alt="app-loading-mockup" class="floatleft sideimages mockphone" src="./images/app-mockup.png"/>
             <img alt="app-chat-mockup"class="floatright sideimages mockphone" src="./images/Claw_mockchat.png"/>
@@ -97,7 +105,7 @@
         </div>
 
         <!--Claw tokenomics-->
-        <div class="section animated">
+        <div class="section animated" id="CT">
             <h1>Claw tokenomics</h1>
             <img alt="chart" src="./images/macchart.png" class="floatright chart"/>
             <p>
@@ -119,13 +127,61 @@
         </div>
 
         <!--Roadmap-->
-        <div class="section animated">
+        <div class="section animated" id="RM">
             <h1>Roadmap</h1>
-                    <img alt="roadmap" src="./images/moonshot.png" class="roadmap"/>
+            <div class="roadmapsections animated">
+                <div class="rmquarter animated">
+                    <p style="font-size: 16;">
+                        2021 Q2</br>
+                        &bull;</br>
+                        &bull;</br>
+                        &bull;</br>
+                        • CoinGecko and CoinMarketCap Listing!</br>
+                        • Further Marketing activities!</br>
+                        • Initial Exchange Listings!</br>
+                        • Hosting a AMA!</br>
+                    </p>
+                </div>
+                <div class="rmquarter animated">
+                    <p style="font-size: 16;">
+                        2021 Q3</br>
+                        &bull;</br>
+                        &bull;</br>
+                        &bull;</br>
+                        • Charitable activities!</br>
+                        • Further exchange listings!</br>
+                        • Release first beta of our app!</br>
+                        • Partnerships to grow the community!</br>
+                    </p>
+                </div>
+                <div class="rmquarter animated">
+                    <p style="font-size: 16;">
+                        2021 Q4</br>
+                        &bull;</br>
+                        &bull;</br>
+                        &bull;</br>
+                        • Partnerships to grow the community!</br>
+                        • Release first beta of our app!</br>
+                        • Further exchange listings!</br>
+                        • Charitable activities!</br>
+                    </p>
+                </div>
+                <div class="rmquarter animated">
+                    <p style="font-size: 16;">
+                        2022 plans</br>
+                        &bull;</br>
+                        &bull;</br>
+                        &bull;</br>
+                        • Alot more to come!</br>
+                        • Production of a PC game?</br>
+                        • Partnership with gaming platform?</br>
+                    </p>
+                </div>
+            </div>
         </div>
 
         <!--Our partnerships-->
-        <div class="section animated">
+        <div class="section animated" id="OP">
             <h1>Partnerships</h1>
             <img alt="Nychron-partnership" class="floatleft sideimages partnerships" src="./images/nychron.jpg"/>
             <img alt="Nebula-partnership"class="floatright sideimages partnerships" src="./images/nebula.jpg"/>
@@ -194,35 +250,46 @@
         </div>
 
         <script>
-            (function() {
-  var elements;
-  var windowHeight;
+            //navigation
+            function opennav() {
+            document.getElementById("navigation").style.borderWidth = "0.5px";
+            document.getElementById("navigation").style.width = "20%";
+            }
 
-  function init() {
-    elements = document.querySelectorAll('.animated');
-    windowHeight = window.innerHeight;
-  }
+            /* Set the width of the side navigation to 0 */
+            function closenav() {
+            document.getElementById("navigation").style.borderWidth = "0px";
+            document.getElementById("navigation").style.width = "0%";
+            } 
+            //animation
+                        (function() {
+            var elements;
+            var windowHeight;
 
-  function checkPosition() {
-    for (var i = 0; i < elements.length; i++) {
-      var element = elements[i];
-      var positionFromTop = elements[i].getBoundingClientRect().top;
+            function init() {
+                elements = document.querySelectorAll('.animated');
+                windowHeight = window.innerHeight;
+            }
 
-      if (positionFromTop - windowHeight <= 0) {
-        element.classList.add('fade-in-element');
-        element.classList.remove('animated');
-      }
-    }
-  }
+            function checkPosition() {
+                for (var i = 0; i < elements.length; i++) {
+                var element = elements[i];
+                var positionFromTop = elements[i].getBoundingClientRect().top;
 
-  window.addEventListener('scroll', checkPosition);
-  window.addEventListener('resize', init);
+                if (positionFromTop - windowHeight <= 0) {
+                    element.classList.add('fade-in-element');
+                    element.classList.remove('animated');
+                }
+                }
+            }
 
-  init();
-  checkPosition();
-})();
+            window.addEventListener('scroll', checkPosition);
+            window.addEventListener('resize', init);
 
+            init();
+            checkPosition();
+            })();
+</script>
 
-        </script>
     </body>
 </html>
