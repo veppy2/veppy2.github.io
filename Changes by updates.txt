@@ -1,4 +1,0 @@
-update 1 changes~
-social images and locations changed (might be changed again)
-roadmap made more simplistic and easier to read
-font changed from monospace to sans sherif
